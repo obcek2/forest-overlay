@@ -24,9 +24,14 @@
 });
 
 function makeCode () {		
+	alert("comienza")
 	var elText = document.getElementById("forest-code");
 	if (elText != null) {
-		qrcode.makeCode('https://www.forestapp.cc/join-room/?token='+elText.value);
+		var codigo = 'https://www.forestapp.cc/join-room/?token='+elText.value;
+		alert (codigo);
+		qrcode.makeCode(codigo);
+	}else{
+		alert("debe ser nulo")
 	}
 }
 
