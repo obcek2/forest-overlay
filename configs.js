@@ -20,7 +20,7 @@ let configs = (function () {
 
   // Settings - required
   const forestCommands = ['!f', '!forest']; // add more like this ['!f', '!forest']
-  const modOnly = false; // false or true
+  const modOnly = true; // false or true
   const broadcasterOnly = false; // false or true
 
   // Don't touch this
