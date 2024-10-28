@@ -25,9 +25,8 @@
 
 function makeCode () {		
 	var elText = document.getElementById("text");
-	if (elText.value) {
-		qrcode.makeCode('https://www.forestapp.cc/join-room/?token='+elText.value);
-	}
+	qrcode.makeCode('https://www.forestapp.cc/join-room/?token='+elText.value);
+	
 }
 
 makeCode();
