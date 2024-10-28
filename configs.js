@@ -2,9 +2,9 @@ let configs = (function () {
   'use strict';
 
   // Authentication and channels - required
-  const channel = '';
-  const username = '';
-  const oauth = '';
+  const channel = 'arrero82';
+  const username = 'arrero82';
+  const oauth = 'oauth:6n9d3jipzbm0wc8wkopagn2nbvwrio';
   const channelBots = ['streamelements', 'nightbot', 'streamlabs'];
 
   // Styling - required
@@ -16,10 +16,10 @@ let configs = (function () {
 
   // Responses - required
   // Use {forestCode} where you want the code to be inserted
-  const forestMsg = 'Our new forest code is: {forestCode} 🌲'; // works with emojis
+  const forestMsg = 'El nuevo código de forest es: {forestCode} 🌲'; // works with emojis
 
   // Settings - required
-  const forestCommands = ['!f']; // add more like this ['!f', '!forest']
+  const forestCommands = ['!f', '!forest']; // add more like this ['!f', '!forest']
   const modOnly = false; // false or true
   const broadcasterOnly = false; // false or true
 
