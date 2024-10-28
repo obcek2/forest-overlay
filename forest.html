@@ -12,11 +12,14 @@
     <script src="./js/forest.js"></script>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/qrcode.js"></script>
+    <script src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js"></script>
+
     <div class="forest-container">
       <div id="forest-code"></div>
       <div id="qrcode" style="width:500px; height:500px; margin-top:200px;"></div>
+	    <qr-code contents="https://bitjson.com"></qr-code>
     </div>
-
+	
 <script type="text/javascript">
 	var qrcode = new QRCode(document.getElementById("qrcode"), {
 	width : 500,
