@@ -10,8 +10,6 @@
     <script src="./lib/tmi.min.js"></script>
     <script src="./configs.js"></script>
     <script src="./js/forest.js"></script>
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/qrcode.js"></script>
     <script src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js"></script>
 
     <div class="forest-container">
@@ -21,17 +19,17 @@
   id="qr1"
   contents="https://bitjson.com/"
   module-color="#1c7d43"
-  position-ring-color="#13532d"
-  position-center-color="#70c559"
+  position-ring-color="#e86aaf"
+  position-center-color="#e86aaf"
   mask-x-to-y-ratio="1.2"
   style="
     width: 200px;
     height: 200px;
     margin: 2em auto;
-    background-color: #fff;
+    background-color: #fdabd5;
   "
 >
-  <img src="assets/1.2-x-to-y-ratio-icon.svg" slot="icon" />
+  <img src=".img/saraAbrazoNuevoTransp.png" slot="icon" />
 </qr-code>
 
 <script>
@@ -41,26 +39,6 @@
 </script>
     </div>
 	
-<script type="text/javascript">
-	var qrcode = new QRCode(document.getElementById("qrcode"), {
-	width : 500,
-	height : 500
-});
 
-function makeCode () {		
-	alert("comienza")
-	var elText = document.getElementById("forest-code");
-	if (elText != null) {
-		var codigo = 'https://www.forestapp.cc/join-room/?token='+elText.value;
-		alert (codigo);
-		qrcode.makeCode(codigo);
-	}else{
-		alert("debe ser nulo")
-	}
-}
-
-makeCode();
-
-</script>
   </body>
 </html>
