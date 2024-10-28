@@ -25,22 +25,13 @@
 
 function makeCode () {		
 	var elText = document.getElementById("text");
-	if (elText.value!=null) {
+	if (elText != null) {
 		qrcode.makeCode('https://www.forestapp.cc/join-room/?token='+elText.value);
 	}
 }
 
 makeCode();
 
-$("#text").
-	on("blur", function () {
-		makeCode();
-	}).
-	on("keydown", function (e) {
-		if (e.keyCode == 13) {
-			makeCode();
-		}
-	});
 </script>
   </body>
 </html>
