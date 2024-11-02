@@ -91,7 +91,10 @@
       if (commands.includes(command)) {
         const forestCode = messageContent[1];
         forestCodeEl.textContent = forestCode;
-
+        
+        var qrDiv = document.getElementById('qr1');
+        qrDiv.getAttribute('contents').value(forestCode);
+        
         const botMsg = responses.forestMsg.replace('{forestCode}', forestCode);
         client.say(target, botMsg);
       }
