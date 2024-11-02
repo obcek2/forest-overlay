@@ -16,16 +16,6 @@ body {
   width: inherit;
 }
 
-.forest-container {
-  background-color: #fffff;
-  height: inherit;
-  width: inherit;
-
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 #forest-code {
   margin-top: var(--margin-top);
   text-align: center;
