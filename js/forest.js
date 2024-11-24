@@ -89,12 +89,13 @@
       const command = messageContent[0].toLowerCase();
 
       if (commands.includes(command)) {
-        const forestCode = messageContent[1];
+        var forestCode = messageContent[1];
         if(!forestCode){
             forestCodeEl.textContent = forestCode.toUpperCase();
-
+            forestCode = forestCode.toUpperCase();
         }else {
             forestCodeEl.textContent = '';
+            forestCode = '';
         }
         
         var qrDiv = document.getElementById('qr1');
