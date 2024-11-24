@@ -30,4 +30,7 @@ body {
 
 .forest-qr {
   text-align: center;
+  visibility: inherit;
 }
+
+
