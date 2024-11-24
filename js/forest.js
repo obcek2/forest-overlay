@@ -95,7 +95,7 @@
          alert("forestcode "+forestCode);
         
         var qrDiv = document.getElementById('qr1');
-        qrDiv.getAttribute('contents').value(forestCode);
+        qrDiv.setAttribute('contents', forestCode);
         
         const botMsg = responses.forestMsg.replace('{forestCode}', forestCode);
         client.say(target, botMsg);
