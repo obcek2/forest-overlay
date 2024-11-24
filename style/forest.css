@@ -17,10 +17,13 @@ body {
 }
 
 #forest-code {
-  margin-top: var(--margin-top);
   text-align: center;
-  font-family: var(--font-family), sans-serif;
-  font-weight: var(--font-weight);
-  font-size: var(--font-size);
-  color: var(--text-color);
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  font-size: 120px;
+  color: white;
+}
+
+.forest-qr {
+  text-align: center;
 }
