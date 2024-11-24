@@ -14,30 +14,44 @@
     <script src="./js/forest.js"></script>
     <script src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js"></script>
 
-    <div class="forest-container">
-      <div id="forest-code" style="text-align:left"></div>
-<qr-code
-  id="qr1"
-  contents="https://bitjson.com/"
-  module-color="#fdabd5"
-  position-ring-color="#e86aaf"
-  position-center-color="#e86aaf"
-  mask-x-to-y-ratio="1.2"
-  style="
-    width: 200px;
-    height: 200px;
-    background-color: #fffff;
-  "
->
-  <img src="./img/saraAbrazoNuevoTransp.png" width="35px" slot="icon" />
+    <div class="col-md-12">
+      <div class="row">
+      <div class="col-md-1">
+        <img src="./media/forest2.png" style="margin-top:1em"/>
+      </div>
+      <div class="col-md-8">
+        <div class="forest-container">
+            <div id="forest-code" style="text-align:left"></div>
+      </div>
+    </div>
+    </div>
+   <div class="col-md-12" style="text-align:center; margin-left:8em; margin-top: -1em;">
+            <qr-code
+              id="qr1"
+              contents="https://www.saradieste.com/"
+              module-color="#fdabd5"
+              position-ring-color="#e86aaf"
+              position-center-color="#e86aaf"
+              mask-x-to-y-ratio="1.2"
+              style="
+                width: 200px;
+                height: 200px;
+                background-color: #fffff;
+              "
+            >
+              <img src="./img/saraAbrazoNuevoTransp.png" width="35px" slot="icon" />
 </qr-code>
-
-<script>
+          <script>
   document.getElementById('qr1').addEventListener('codeRendered', () => {
     document.getElementById('qr1').animateQRCode('MaterializeIn');
   });
 </script>
+       </div>
+
+      </div>
     </div>
+
+   
 	
 
   </body>
