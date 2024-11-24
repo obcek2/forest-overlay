@@ -89,8 +89,12 @@
       const command = messageContent[0].toLowerCase();
 
       if (commands.includes(command)) {
-        const forestCode = messageContent[1].toUpperCase();
-        forestCodeEl.textContent = forestCode;
+        const forestCode = messageContent[1];
+        if(!forestCode){
+          forestCodeEl.textContent = '';
+        }else {
+              forestCodeEl.textContent = forestCode.toUpperCase();
+        }
         
         var qrDiv = document.getElementById('qr1');
         qrDiv.setAttribute('contents', 'https://forestapp.cc/join-room?token='+forestCode);
