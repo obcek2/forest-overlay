@@ -91,9 +91,10 @@
       if (commands.includes(command)) {
         const forestCode = messageContent[1];
         if(!forestCode){
-          forestCodeEl.textContent = '';
+            forestCodeEl.textContent = forestCode.toUpperCase();
+
         }else {
-              forestCodeEl.textContent = forestCode.toUpperCase();
+            forestCodeEl.textContent = '';
         }
         
         var qrDiv = document.getElementById('qr1');
