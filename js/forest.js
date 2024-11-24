@@ -90,7 +90,7 @@
 
       if (commands.includes(command)) {
         var forestCode = messageContent[1];
-        if(!forestCode){
+        if(forestCode){
             forestCodeEl.textContent = forestCode.toUpperCase();
             forestCode = forestCode.toUpperCase();
         }else {
