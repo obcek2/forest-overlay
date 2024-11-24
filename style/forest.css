@@ -24,6 +24,10 @@ body {
   color: white;
 }
 
+.forest-container{
+  text-align: center;
+}
+
 .forest-qr {
   text-align: center;
 }
