@@ -87,10 +87,10 @@
 
     if (messageContent.length > 1) {
       const command = messageContent[0].toLowerCase();
-
+    
       if (commands.includes(command)) {
-        var forestCode = messageContent[1];
-        if(forestCode){
+        const forestCode = messageContent[1];
+        if(!forestCode){
             forestCodeEl.textContent = forestCode.toUpperCase();
             forestCode = forestCode.toUpperCase();
         }else {
