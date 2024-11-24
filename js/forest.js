@@ -95,7 +95,7 @@
          alert("forestcode "+forestCode);
         
         var qrDiv = document.getElementById('qr1');
-        qrDiv.setAttribute('contents', forestCode);
+        qrDiv.setAttribute('contents', 'https://forestapp.cc/join-room?token='+forestCode);
         
         const botMsg = responses.forestMsg.replace('{forestCode}', forestCode);
         client.say(target, botMsg);
