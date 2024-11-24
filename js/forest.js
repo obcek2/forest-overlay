@@ -86,11 +86,13 @@
     const messageContent = msg.trim().split(' ');
 
     if (messageContent.length > 1) {
+      alert("Entra");
       const command = messageContent[0].toLowerCase();
 
       if (commands.includes(command)) {
         const forestCode = messageContent[1];
         forestCodeEl.textContent = forestCode;
+         alert("forestcode "+forestCode);
         
         var qrDiv = document.getElementById('qr1');
         qrDiv.getAttribute('contents').value(forestCode);
