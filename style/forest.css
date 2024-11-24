@@ -20,8 +20,10 @@ body {
   text-align: center;
   font-family: Roboto, sans-serif;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 40px;
   color: black;
+  margin-top: 0.4em;
+  margin-left: -0.5em;
 }
 
 .forest-container{
