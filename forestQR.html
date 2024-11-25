@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+    <meta content="utf-8" http-equiv="encoding" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./style/forest.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  </head>
+  <body>
+    <script src="./lib/tmi.min.js"></script>
+    <script src="./configs.js"></script>
+    <script src="./js/forest.js"></script>
+    <script src="https://unpkg.com/@bitjson/qr-code@1.0.2/dist/qr-code.js"></script>
+
+    
+   <div class="col-md-12" style="text-align:center; ">
+            <qr-code
+              id="qr1"
+              contents="https://www.saradieste.com/"
+              module-color="#fdabd5"
+              position-ring-color="#e86aaf"
+              position-center-color="#e86aaf"
+              mask-x-to-y-ratio="1.2"
+              style="
+                width: 200px;
+                height: 200px;
+                background-color: #fffff;
+              "
+            >
+              <img src="./img/saraAbrazoNuevoTransp.png" width="35px" slot="icon" />
+</qr-code>
+          <script>
+  document.getElementById('qr1').addEventListener('codeRendered', () => {
+    document.getElementById('qr1').animateQRCode('MaterializeIn');
+  });
+</script>
+
+</div>
+
+    
+
+   
+	
+
+  </body>
+</html>
