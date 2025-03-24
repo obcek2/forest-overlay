@@ -4,7 +4,7 @@ let configs = (function () {
   // Authentication and channels - required
   const channel = 'arrero82';
   const username = 'arrero82';
-  const oauth = 'oauth:6n9d3jipzbm0wc8wkopagn2nbvwrio';
+  const oauth = 'oauth:4ryqivn4ck79f44dskflr5psco4k9s';
   const channelBots = ['streamelements', 'nightbot', 'streamlabs'];
 
   // Styling - required
